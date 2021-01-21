@@ -34,7 +34,7 @@ public class discordbotstatus extends ListenerAdapter implements Listener, Comma
 
     private void startBot() {
         try {
-            jda = new JDABuilder(AccountType.BOT).setToken("NzkzODUxNzYxODA1NzU0Mzk4.X-ySEQ.u83N8sv9WYDJmkHLad4aTZO6d7M").build();
+            jda = new JDABuilder(AccountType.BOT).setToken("token").build();
             jda.getPresence().setStatus(OnlineStatus.IDLE);
             jda.getPresence().setActivity(Activity.watching("BurnEmpire szerverét"));
         } catch (LoginException e) {
